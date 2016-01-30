@@ -3,6 +3,6 @@ class HomeController < ApplicationController
   # @@data = File.read("public/painting.json")
 
   def show
-    # render json: @@data
+    @painting = Painting.find(1)
   end
 end
