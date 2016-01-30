@@ -1,13 +1,16 @@
-<div class="tags-container">
-  <% @tags.each do |tag| %>
-    <%= render 'tags/tag', {tag: tag} %>
-  <% end %>
+<div class="row">
+
+  <p>
+  <img class="painting" title="<%= @painting.title %>" src="<%= @painting.url %>" alt="<%= @painting.description %>">
+  </p>
+  <%= render 'tags/form', painting_id: @painting.id %>
+
+
+  <ul class="tags-container">
+    <% @tags.each do |tag| %>
+      <%= render 'tags/tag', {tag: tag} %>
+    <% end %>
+  <ul>
+
 </div>
-
-<p>
-<img class="painting" src="<%= @painting.url %>" alt="A Storm in the Rocky Mountains, Mt. Rosalie by
-Albert Bierstad">
-</p>
-
-<%= render 'tags/form', painting_id: @painting.id %>
 
