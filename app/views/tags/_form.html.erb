@@ -1,14 +1,6 @@
-<%= form_for @tag do |f| %>
-  <%= f.label 'Add a Tag' %>
+<%= form_for @tag, remote: true, html: {id: "new_tag_form"} do |f| %>
+  <div id="tag_errors"></div>
   <%= f.text_field :text %>
   <%= f.hidden_field :painting_id, value: painting_id %>
-  <%= f.submit %>
+  <%= f.submit 'Add New Tag' %>
 <% end %>
-
-
-<!-- <form action="/tags" method="post">
-  <input name="authenticity_token" type="hidden">
-  <label>Add a Tag</label>
-  <p><input type="text" name="painting[tags][0][name]" value=""></p>
-  <input type="submit" value="Submit">
-</form> -->

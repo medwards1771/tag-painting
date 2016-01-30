@@ -13,8 +13,12 @@ class HomeController < ApplicationController
 
   def create_tags
     @tag = Tag.new(tag_params)
-    @tag.save
-    redirect_to root_path
+    if @tag.save
+      tag_item = render_to_string(partial: 'tags/tag', locals: {tag: @tag})
+      render json: {message: "Tag saved!", tag_item: tag_item}
+    else
+      render json: {errors: @tag.errors.full_messages}, status: 422
+    end
   end
 
   private 
