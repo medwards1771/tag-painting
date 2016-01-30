@@ -1,5 +1,3 @@
 class Painting < ActiveRecord::Base
-  has_many :painting_tags
-  has_many :tags, through: :painting_tags
-
+  has_many :tags
 end

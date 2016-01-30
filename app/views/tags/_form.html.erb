@@ -1,0 +1,14 @@
+<%= form_for @tag do |f| %>
+  <%= f.label 'Add a Tag' %>
+  <%= f.text_field :text %>
+  <%= f.hidden_field :painting_id, value: painting_id %>
+  <%= f.submit %>
+<% end %>
+
+
+<!-- <form action="/tags" method="post">
+  <input name="authenticity_token" type="hidden">
+  <label>Add a Tag</label>
+  <p><input type="text" name="painting[tags][0][name]" value=""></p>
+  <input type="submit" value="Submit">
+</form> -->

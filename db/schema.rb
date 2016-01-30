@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160130150507) do
+ActiveRecord::Schema.define(version: 20160130172926) do
 
   create_table "painting_tags", force: :cascade do |t|
     t.integer  "painting_id"
@@ -27,8 +27,10 @@ ActiveRecord::Schema.define(version: 20160130150507) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "text"
+    t.integer  "painting_id"
   end
 
 end

@@ -1,2 +1,8 @@
 <img class="painting" src="<%= @painting.url %>" alt="A Storm in the Rocky Mountains, Mt. Rosalie by
 Albert Bierstad">
+
+<%= render 'tags/form', painting_id: @painting.id %>
+
+<% @tags.each do |tag| %>
+  <p><%= tag.text %></p>
+<% end %>
