@@ -1,3 +1,4 @@
 <li class="single-tag">
   <%= tag.text %>
+  <%= link_to("X", destroy_tags_path(tag), method: :delete, remote: true, class: "destroy-tag-js") %>
 </li>

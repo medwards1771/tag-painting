@@ -1,5 +1,6 @@
 $(document).on("page:change", function(){
     addNewTagListener();
+    destroyTagListener();
 });
 
 function addNewTagListener(){
@@ -12,5 +13,11 @@ function addNewTagListener(){
     for (i = 0; i < data.responseJSON.errors.length; i++) {
       $('#tag_errors').addClass('alert alert-danger').append(data.responseJSON.errors[i]);
     }
+  });
+}
+
+function destroyTagListener(){
+  $(".tags-container").on("ajax:success", ".destroy-tag-js", function(){
+    $(this).parent().remove();
   });
 }

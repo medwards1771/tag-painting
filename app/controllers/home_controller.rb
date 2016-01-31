@@ -21,6 +21,12 @@ class HomeController < ApplicationController
     end
   end
 
+  def destroy_tags
+    @tag = Tag.find(params[:format])
+    @tag.destroy 
+    render json: {message: "destroyed"}
+  end
+
   private 
 
   def tag_params
