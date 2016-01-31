@@ -1,5 +1,5 @@
+<div id="tag_errors"></div>
 <%= form_for @tag, remote: true, html: {id: "new_tag_form"} do |f| %>
-  <div id="tag_errors"></div>
   <%= f.text_field :text %>
   <%= f.hidden_field :painting_id, value: painting_id %>
   <%= f.submit 'Add New Tag' %>

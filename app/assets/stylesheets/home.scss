@@ -1,5 +1,6 @@
 body {
-  background-color: #FFFACD;
+  background-color: #FAF0E6;
+  font-family: "Georgia", serif;
 }
 
 .header {
@@ -11,6 +12,7 @@ IMG.painting {
   border-style: solid;
   border-color: #8B4513;
   border-width: 7px;
+  border-radius: 2px;
   margin-top: 5px;
   margin-left: 10px;
 }
@@ -23,24 +25,51 @@ figcaption{
 .description {
   float: right;
   width: 40%;
-  margin-right: 40px;
-  margin-top: 30px;
+  margin-right: 50px;
 }
 
 .tag-form {
   margin-left: 100px;
 }
 
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
 .tags-container {
-  margin-left: 27%;
+  margin-left: 25%;
+  margin-right: 5%
 }
 
 .tags-container li {
+  font-family: "Courier New", monospace;
   display: inline-block;
   border: 1px solid black;
   background-color: #66CDAA;
   border-radius: 5px;
   text-align: center;
   padding: 5px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+
+#tag_errors {
+  color: crimson;
 }
 
