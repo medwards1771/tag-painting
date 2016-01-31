@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "awesome_print", require:"ap"
 gem 'pry'
 gem 'pry-byebug'
 gem 'annotate'
