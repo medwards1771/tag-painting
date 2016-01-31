@@ -2,29 +2,42 @@ body {
   background-color: #FFFACD;
 }
 
+.header {
+  margin-left: 30px;
+}
+
 IMG.painting {
   width: 50%;
   border-style: solid;
   border-color: #8B4513;
   border-width: 7px;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+figcaption{
   margin-left: 20px;
+  font-style: italic;
+}
+
+.description {
+  float: right;
+  width: 40%;
+  margin-right: 40px;
+  margin-top: 30px;
 }
 
 .tag-form {
-  margin-left: 30px;
+  margin-left: 100px;
 }
 
 .tags-container {
-  float: right;
-  width: 40%;
-  margin-top: 15%;
-  margin-right: 27px;
+  margin-left: 27%;
 }
 
 .tags-container li {
   display: inline-block;
-  border: 1px dotted black;
+  border: 1px solid black;
   background-color: #66CDAA;
   border-radius: 5px;
   text-align: center;
