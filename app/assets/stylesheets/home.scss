@@ -10,7 +10,7 @@ body {
 IMG.painting {
   width: 50%;
   border-style: solid;
-  border-color: #8B4513;
+  border-color: #C0C0C0;
   border-width: 7px;
   border-radius: 2px;
   margin-top: 5px;
@@ -26,6 +26,7 @@ figcaption{
   float: right;
   width: 40%;
   margin-right: 50px;
+  font-size: 95%
 }
 
 .tag-form {
@@ -33,20 +34,20 @@ figcaption{
 }
 
 input[type=text] {
-    padding:5px; 
-    border:2px solid #ccc; 
+    padding: 5px; 
+    border: 2px solid #4169E1; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
-input[type=text]:focus {
-    border-color:#333;
-}
 
 input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
+    font-family: "Courier New", monospace;
+    font-size: 85%;
+    padding: 5px; 
+    background: #4169E1; 
+    color: white;
+    border: 2px solid #4169E1;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
